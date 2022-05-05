@@ -1,0 +1,8 @@
+{
+    "pageTitle": ".page-header__title",
+    "pageSubTitle": ".page-header__subtitle",
+    "loginTitle": ".login__title",
+    "emailInput": "[name='email']",
+    "passInput": "[name='password']",
+    "submitButton": ".login__button"
+}

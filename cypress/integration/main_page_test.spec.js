@@ -1,6 +1,7 @@
-const selectors = require('../fixtures/main_page_selectors.json')
+const mainPage = require('../fixtures/pages/bookingMainPage.json')
+
 it('Should open app main page', () => {
     cy.visit('/');
-    cy.get(selectors.pageTitle).should('be.visible');
-    cy.get(selectors.daysOfWeek).should('have.length', 7);
+    cy.get(mainPage.pageTitle).should('be.visible');
+    cy.get(mainPage.daysOfWeek).should('have.length', 7);
 });
