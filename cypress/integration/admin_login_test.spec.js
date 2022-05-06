@@ -4,7 +4,7 @@ import '../support/commands'
 
 beforeEach(() => {
     cy.visit('/admin');
-})
+});
 
 it('Should login with valid auth data', () => {
     cy.get(selectors.pageTitle).should('be.visible');

@@ -1,4 +1,7 @@
 {
     "pageTitle": ".page-header__title",
-    "daysOfWeek": ".page-nav__day-week"
+    "daysOfWeek": ".page-nav__day-week",
+    "secondDay": "a.page-nav__day:nth-of-type(2)",
+    "acceptButton": ".acceptin-button",
+    "qrCode": ".ticket__info-qr"
 }
