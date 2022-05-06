@@ -8,7 +8,7 @@ Cypress.Commands.add('loginToAdmin', (email, password) => {
 
 Cypress.Commands.add('createNewHall', (hallName) => {
     cy.contains('Создать зал').click();
-    cy.get('div.popup__wrapper label input').type(hallName);
+    cy.get('[placeholder="Например, «Зал 1»"]').type(hallName);
     cy.contains('Добавить зал').click();
 });
 
