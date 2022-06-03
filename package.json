@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:admin:logintest": "cypress run --spec 'cypress/integration/admin_login_test.spec.js'",
+    "cy:bookingtest": "cypress run --spec 'cypress/integration/booking_test.spec.js",
+    "cy:mainpagetest": "cypress run --spec 'cypress/integration/main_page_test.spec.js"
   },
   "author": "Mikhail Ponomarev",
   "license": "ISC",
