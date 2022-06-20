@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:admin:logintest": "cypress run --spec 'cypress/integration/admin_login_test.spec.js'",
-    "cy:bookingtest": "cypress run --spec 'cypress/integration/booking_test.spec.js",
-    "cy:mainpagetest": "cypress run --spec 'cypress/integration/main_page_test.spec.js"
+    "cy:admin:logintest": "cypress run --spec 'cypress/integration/admin_login_test.spec.js' --record --key 3d4c679d-9d73-49f5-8d5e-a8455a026672",
+    "cy:bookingtest": "cypress run --spec 'cypress/integration/booking_test.spec.js' --record --key 3d4c679d-9d73-49f5-8d5e-a8455a026672",
+    "cy:mainpagetest": "cypress run --spec 'cypress/integration/main_page_test.spec.js' --record --key 3d4c679d-9d73-49f5-8d5e-a8455a026672",
+    "cy:parallel": "npm run cy:admin:logintest -- --browser chrome --group admin/login --ci-build-id 1 & npm run cy:bookingtest -- --browser chrome --group user/booking --ci-build-id 1 & npm run cy:mainpagetest -- --browser chrome --group user/mainpage --ci-build-id 1"
   },
   "author": "Mikhail Ponomarev",
   "license": "ISC",
